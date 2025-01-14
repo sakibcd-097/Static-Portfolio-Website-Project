@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="contact.html">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .navbar {
+            background:green;
+            color: #fff;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            text-align: center;
+            background: azure;
+            color:black;
+            padding: 100px 20px;
+        }
+
+        .hero-section .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+        }
+
+        .skills-section, .projects-section {
+            padding: 50px 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .skills-section h2, .projects-section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            text-align: center;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            width: 120px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project {
+            text-align: left;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #fff;
+            background: #5fed9f;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #dfa9a9;
+        }
+
+        
+
+        .footer-section {
+            text-align: center;
+            padding: 20px;
+            background:green;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+   
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Hello, I'm Sakib Chowdhury</h1>
+            <p>Welcome!</p>
+        </div>
+    </section>
+
+    
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="html-icon.png" alt="HTML Icon">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="css-icon.png" alt="CSS Icon">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="javascript-icon.png" alt="JavaScript Icon">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="react-icon.jpg" alt="React Icon">
+                <p>React.js</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Simple Page Project</h3>
+                <p>Simple Html Page</p>
+                <a href="https://github.com/sakibcd-097/simple-html-page" class="btn">View Code</a>
+                <a href="https://github.com/sakibcd-097/simple-html-page" class="btn">Live Demo</a>
+            </div>
+            <div class="project">
+                <h3>Calculator Project</h3>
+                <p>This is Calculator Project. It will be live soon.</p>
+                <a href="https://github.com/sakibcd-097/basic-calculator-project" class="btn">View Code</a>
+                <a href="https://github.com/sakibcd-097/basic-calculator-project" class="btn">Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+    <footer class="footer-section">
+        <p>&copy; 2025 Sakib Chowdhury. All rights reserved.</p>
+    </footer>
+</body>
+</html>
